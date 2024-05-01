@@ -85,8 +85,9 @@ The dd command is traditionally used for copying and converting raw data. It is 
 
 Since we know the exact byte where the Python script starts after the #--PYTHON--# marker (offset 90 bytes in this example), we can instruct dd to skip directly to this point and pipe the result to Python for execution:
 
+```bash
 dd if=executable_polyglot.png bs=1 skip=90 | python3
-
+```
 **Conclusion**
 
 This approach illustrates not only the versatility of combining different data types into a single file but also demonstrates practical command-line skills for extracting and executing parts of binary files. Understanding how to manipulate and utilize polyglot files can be a valuable skill in many IT and security-related fields.
